@@ -1,1 +1,121 @@
 name: khaled 
+
+age: 23
+
+salary: 3000.2
+
+username: khaled_tantawi
+
+is_active: true
+
+employement_date: 2026-03-09M16:51:30Z
+
+
+serial_number : "0050"
+
+# here we use double \ because of yaml language , it is tranformed to one \
+regex: "^[A-Za-z]+:\\s"
+
+# here yaml will considor \n so we better use one '
+message: "Hello\nkhaled" # Hello
+                         # khaled
+
+# as we said yaml transfer \\ to \
+path: "C:\\Users\\Admin"
+
+quote: "It's yaml"
+
+# single quote no need to \\
+message: 'Hello\nkhaled' # Hello khaled
+s_path: "C:\Users\Admin"
+s_quote: 'It''s yaml' 
+
+# multiline string |
+long_message:  |           
+  hello
+  khaled
+  how r u ?
+  
+  # hello\nkhaled\nhow r u ?\n
+
+
+ 
+folded_message:  >       
+  hello
+  khaled
+  how r u ?
+
+  this is a new line
+  
+   # hello khaled how r u ?
+   # this is a new line 
+
+
+# yaml collections : maps and lists 
+
+# map :
+employee:
+  name: khaled tantawi
+  age: 23
+  contact:
+    email: tantawikhaled02@gmail.com
+    phone: 07 73 39 87 70
+  
+# list of maps:
+employee:
+  - name: khaled tantawi
+    age: 23
+    contact:
+      email: tantawikhaled02@gmail.com
+      phone: 07 73 39 87 70
+
+  - name: Antoine Gerard
+    age: 24
+    contact:
+      email: emailexample@gmail.com
+      phone: 07 73 59 27 44
+
+  - name: jjj llll
+    age: 27
+    contact:
+      email: emailexample@gmail.com
+      phone: 07 73 59 27 44
+
+
+# map of lists: 
+servers: 
+  prodution:
+    - host: prod1.example.com
+      ip: 123.2324.5325
+    - host: prod2.example.com
+      ip: 034.453.222
+    
+  staging:
+    - host: stage1.example.com
+      ip: 123.2324.5325
+    - host: stage2.example.com
+      ip: 034.453.222
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
