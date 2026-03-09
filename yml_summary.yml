@@ -26,8 +26,8 @@ path: "C:\\Users\\Admin"
 quote: "It's yaml"
 
 # single quote no need to \\
-message: 'Hello\nkhaled' # Hello khaled
-s_path: "C:\Users\Admin"
+s_message: 'Hello\nkhaled' # Hello khaled
+s_path: 'C:\Users\Admin'
 s_quote: 'It''s yaml' 
 
 # multiline string |
