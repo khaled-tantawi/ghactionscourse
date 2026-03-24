@@ -1,6 +1,16 @@
 on:
     workflow_dispatch: # allows us to trigger this workflow manually from the GitHub UI or via cli
-
+        inputs:
+            environment: # define an input parameter for the workflow
+                description: 'The environment to deploy to' # description of the input parameter
+                required: true # make the input parameter required
+                default: 'production' # set a default value for the input parameter
+                type: choice # specify the type of input parameter as a choice
+                options: # define the options for the choice input parameter
+                    - production
+                    - staging
+                    - development
+                    
 jobs: 
     deploy:
         runs-on: ubuntu-latest
