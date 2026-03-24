@@ -1,6 +1,6 @@
 def say_hello(name: str = "World") -> str:
-    return f"Hello, {name.upper()}!"
+    return f"Hello, {name}!"
 
 # ignore me 
-# if __name__ == "__main__":
-#     print(say_hello("Alice"))
+if __name__ == "__main__":
+    print(say_hello("Alice"))
