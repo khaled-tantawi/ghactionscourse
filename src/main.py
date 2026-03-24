@@ -3,4 +3,4 @@ def say_hello(name: str = "World") -> str:
 
 # ignore me 
 if __name__ == "__main__":
-    print(say_hello("khaled"))
+    print(say_hello("Alice"))
