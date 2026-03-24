@@ -7,5 +7,5 @@ jobs:
   handle-incident:
     runs-on: ubuntu-latest
     steps:
-      - name : print incident details continue-on-error: 
+      - name : print incident details 
         run: echo "Incident reported"
